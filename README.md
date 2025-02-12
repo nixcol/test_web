@@ -12,17 +12,17 @@
 
 [x] Modification du nom et de la durée des scènes via des champs éditables
 
-[ ] Mise à jour des transitions en cas de modification du nom d'une scène
+[x] Mise à jour des transitions en cas de modification du nom d'une scène
 
-[ ] Modification de la durée d'une transition
+[x] Modification de la durée d'une transition
 
-[ ] Mise à jour automatique de l'ordre des scènes après suppression ou réorganisation
+[x] Mise à jour automatique de l'ordre des scènes après suppression ou réorganisation
 
-[ ] Ajout d'un bouton "Reset" pour réinitialiser la liste des scènes et transitions
+[x] Ajout d'un bouton "Reset" pour réinitialiser la liste des scènes et transitions
 
-[ ] Ajout d'un bouton "Load" pour charger un exemple de scènes et transitions
+[x] Ajout d'un bouton "Load" pour charger un exemple de scènes et transitions
 
-[ ] Ajout d'un bouton "Save" permettant de stocker la liste en mémoire ou de l'envoyer à un backend
+[x] Ajout d'un bouton "Save" permettant de stocker la liste en mémoire ou de l'envoyer à un backend
 
 [ ] Gestion de la persistance des données
 
