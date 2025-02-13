@@ -1,5 +1,3 @@
-import React from "react";
-
 type TransitionProps = {
   from: string;
   to: string;

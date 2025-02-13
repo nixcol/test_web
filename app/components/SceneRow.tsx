@@ -1,21 +1,20 @@
-import React from "react";
-
 type SceneProps = {
-  id: number;
-  name: string;
-  duration: number;
-  isLast: boolean;
-  onNameChange: (id: number, newName: string) => void;
-  onDurationChange: (id: number, newDuration: number) => void;
-  onRemove: (id: number) => void;
-  onAdd: () => void;
-};
+  id: number
+  order: number
+  name: string
+  duration: number
+  isLast: boolean
+  onNameChange: (id: number, newName: string) => void
+  onDurationChange: (id: number, newDuration: number) => void
+  onRemove: (id: number) => void
+  onAdd: (id: number) => void
+}
 
 export default function SceneRow({
   id,
+  order,
   name,
   duration,
-  isLast,
   onNameChange,
   onDurationChange,
   onRemove,
@@ -23,7 +22,7 @@ export default function SceneRow({
 }: SceneProps) {
   return (
     <tr className="border border-gray-300">
-      <td className="border border-gray-300 px-4 py-2 text-center">Scene {id}</td>
+      <td className="border border-gray-300 px-4 py-2 text-center">Scene {order}</td>
       <td className="border border-gray-300 px-4 py-2">
         <input
           type="text"
@@ -41,21 +40,14 @@ export default function SceneRow({
         />
       </td>
       <td className="border border-gray-300 px-4 py-2 text-center">
-        <button
-          onClick={() => onRemove(id)}
-          className="bg-red-500 text-white px-2 py-1 rounded"
-        >
+        <button onClick={() => onRemove(id)} className="bg-red-500 text-white px-2 py-1 rounded">
           -
         </button>
-        {isLast && (
-          <button
-            onClick={onAdd}
-            className="bg-green-500 text-white px-2 py-1 rounded ml-2"
-          >
-            +
-          </button>
-        )}
+        <button onClick={() => onAdd(id)} className="bg-green-500 text-white px-2 py-1 rounded ml-2">
+          +
+        </button>
       </td>
     </tr>
-  );
+  )
 }
+
